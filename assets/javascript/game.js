@@ -34,6 +34,7 @@ while (j < gamewordLength) {
     winword += " "+ gameWord.charAt(j);
     j++;
 
+}
 
 
 alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
@@ -83,12 +84,12 @@ document.onkeyup = function(event){
 	}}
 
 
-	 else {  
+	 else if (index < 0 && lives >0 ){
 	// deducting lives if indexOf === -1, as the user selected character does not exist in the string
 		lives = lives -1;
 		console.log("lives = " +lives)
 		var pLives = document.getElementById("pLives").innerHTML = " Lives: " + lives;
-	}
+	}}
 
 
 	if (lives === 0){
@@ -100,4 +101,4 @@ document.onkeyup = function(event){
 		var winner = document.getElementById("winner").innerHTML = "Well done, you guessed the right word!!";
 	}
 
-}}
+
