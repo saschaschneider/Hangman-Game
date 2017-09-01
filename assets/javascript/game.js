@@ -89,16 +89,18 @@ document.onkeyup = function(event){
 		lives = lives -1;
 		console.log("lives = " +lives)
 		var pLives = document.getElementById("pLives").innerHTML = " Lives: " + lives;
-	}}
 
 
-	if (lives === 0){
+	}
+
+
+	if (lives == 0){
 		var gameOver = document.getElementById("gameOver").innerHTML = " GameOver - refresh the site to play again!";
 		}
 	
 				
 	else if (blanks === winword) {
 		var winner = document.getElementById("winner").innerHTML = "Well done, you guessed the right word!!";
-	}
+	}}
 
 
