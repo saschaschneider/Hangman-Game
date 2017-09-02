@@ -2,29 +2,46 @@
 <html>
 <head>
 	<title>Hangman Game</title>
-	<link rel="stylesheet" href="assets/css/style.css">
 	  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<link rel="stylesheet" href="assets/css/style.css">
+
 
 
 </head>
 <body>
 
-<h1>Hangman</h1>
-<p id="demo"></p> 
-  <!-- Js includes the following text: The word you are looking for has " + gamewordLength + " characters, can you guess it?"; -->
- <h1 id="blanks"></h1> <!-- If word is "Love", there will be 4 - - - -  -->
- <h1 id="pLives"></h1> <!-- Lives:  -->
- <h1 id="gameOver"></h1> <!-- GameOver -->
- <h1 id="winner"></h1> <!--Winner -->
- <h3>You already used the following letters:</h3>
- <h3 id="guessed-letters"></h3> <!--Displays used letters -->
 
-<!-- <div id="display"></div>
-  <div id="buttons"></div>
-  <div id="AllKeys">
-  <button id="allButtons">A</button> -->
+<div class="row">
+  <div class="col-md-3 col1"></div>
+  <div class="col-md-6 col2">
+  <pre class="hangmanHeader text-center">
+
+| |                                            
+| |__   __ _ _ __   __ _ _ __ ___   __ _ _ __  
+| '_ \ / _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
+| | | | (_| | | | | (_| | | | | | | (_| | | | |
+|_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
+                    __/ |                      
+                   |___/                       
+
+</pre>
+<p class ="text-center" id="demo"></p> 
+  <!-- Js includes the following text: The word you are looking for has " + gamewordLength + " characters, can you guess it?"; -->
+ <h1 class ="text-center" id="blanks"></h1> <!-- If word is "Love", there will be 4 - - - -  -->
+ <h6 class ="mt-3 pt-3 text-center guessed-letters-text">You already used the following letters:</h6>
+ <h3 class ="text-center" id="guessed-letters"></h3> <!--Displays used letters -->
+
+ <h1 class ="text-center" id="gameOver"></h1> <!-- GameOver -->
+ <h1 class ="text-center" id="winner"></h1> <!--Winner -->
 
  </div>
+  <div class="col-md-3 col3">
+  <h1 class="text-center lives" id="pLives"></h1> <!-- Lives:  -->
+  <img class="mx-auto d-block" id="theHangman" src="assets/images/hangmanlivesblack6.png" alt="HangmanBase";>
+  </div>
+</div>
+
 
 <script src="assets/javascript/game.js"></script>
 

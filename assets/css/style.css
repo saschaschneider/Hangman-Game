@@ -1,0 +1,46 @@
+body {
+    background-color: black;
+    color: green;
+  }
+
+  .hangmanHeader{
+  color: green;
+  }
+
+  .col3 {
+    position: relative;
+margin-top: 8%;
+  }
+
+@media (max-width: 1000px) {
+#theHangman {
+height: 60%;
+}
+.lives{
+  font-size: 120%;
+
+}
+.col3 {
+margin-top: 14%;
+}
+
+#blanks {
+  font-size: 150%;
+}
+.hangmanHeader{
+font-size: 75%;
+
+}
+#gameOver{
+  font-size: 90%;
+}
+
+#winner{
+  font-size: 90%;
+}
+
+.guessed-letters-text{
+  font-size: 90%;
+}
+
+}

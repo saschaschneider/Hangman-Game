@@ -93,6 +93,29 @@ document.onkeyup = function(event){
 
 	}
 
+	switch (lives) {
+     case 6:
+        var theHangmanBase = document.getElementById("theHangman").src ="assets/images/hangmanlivesblack6.png";  
+        break;
+     case 5:  
+        var theHangmanBase = document.getElementById("theHangman").src ="assets/images/hangmanlivesblack5.png";  
+        break; 
+     case 4:  
+        var theHangmanBase = document.getElementById("theHangman").src ="assets/images/hangmanlivesblack4.png";  
+        break;                      
+	 case 3:  
+        var theHangmanBase = document.getElementById("theHangman").src ="assets/images/hangmanlivesblack3.png";  
+        break;                      
+ 	 case 2:  
+        var theHangmanBase = document.getElementById("theHangman").src ="assets/images/hangmanlivesblack2.png";  
+        break;                      
+ 	case 1:  
+        var theHangmanBase = document.getElementById("theHangman").src ="assets/images/hangmanlivesblack1.png";  
+        break;                      
+ 	case 0:  
+        var theHangmanBase = document.getElementById("theHangman").src ="assets/images/hangmanlivesblack0.png";  
+        }
+
 
 	if (lives == 0){
 		var gameOver = document.getElementById("gameOver").innerHTML = " GameOver - refresh the site to play again!";
@@ -102,5 +125,4 @@ document.onkeyup = function(event){
 	else if (blanks === winword) {
 		var winner = document.getElementById("winner").innerHTML = "Well done, you guessed the right word!!";
 	}}
-
 
