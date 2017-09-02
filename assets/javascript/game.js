@@ -95,25 +95,25 @@ document.onkeyup = function(event){
 
 	switch (lives) {
      case 6:
-        var theHangmanBase = document.getElementById("theHangman").src ="assets/images/hangmanlivesblack6.png";  
+        var theHangmanBase = document.getElementById("theHangman").src ="assets/images/hangmanlivesblack6.PNG";  
         break;
      case 5:  
-        var theHangmanBase = document.getElementById("theHangman").src ="assets/images/hangmanlivesblack5.png";  
+        var theHangmanBase = document.getElementById("theHangman").src ="assets/images/hangmanlivesblack5.PNG";  
         break; 
      case 4:  
-        var theHangmanBase = document.getElementById("theHangman").src ="assets/images/hangmanlivesblack4.png";  
+        var theHangmanBase = document.getElementById("theHangman").src ="assets/images/hangmanlivesblack4.PNG";  
         break;                      
 	 case 3:  
-        var theHangmanBase = document.getElementById("theHangman").src ="assets/images/hangmanlivesblack3.png";  
+        var theHangmanBase = document.getElementById("theHangman").src ="assets/images/hangmanlivesblack3.PNG";  
         break;                      
  	 case 2:  
-        var theHangmanBase = document.getElementById("theHangman").src ="assets/images/hangmanlivesblack2.png";  
+        var theHangmanBase = document.getElementById("theHangman").src ="assets/images/hangmanlivesblack2.PNG";  
         break;                      
  	case 1:  
-        var theHangmanBase = document.getElementById("theHangman").src ="assets/images/hangmanlivesblack1.png";  
+        var theHangmanBase = document.getElementById("theHangman").src ="assets/images/hangmanlivesblack1.PNG";  
         break;                      
  	case 0:  
-        var theHangmanBase = document.getElementById("theHangman").src ="assets/images/hangmanlivesblack0.png";  
+        var theHangmanBase = document.getElementById("theHangman").src ="assets/images/hangmanlivesblack0.PNG";  
         }
 
 
